@@ -1,10 +1,10 @@
 import {Cards, Chart, CountryPicker} from './components'
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Cards/>
-      <Chart/>
       <CountryPicker/>
+      <Chart/>
     </div>
   );
 }
