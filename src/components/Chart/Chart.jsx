@@ -14,8 +14,9 @@ const Chart = () => {
     fetchAPI();
   });
 
-  const lineChart =(
-   dailyData.length ? (
+  const lineChart = (
+   dailyData.length !== 0
+    ? (
     <Line
     data={{
       labels: dailyData.map(({ date }) => date),
@@ -37,7 +38,7 @@ const Chart = () => {
 
   return (
     <div className={styles.container}>
-      {lineChart}
+    {lineChart}
     </div>
   )
 }
