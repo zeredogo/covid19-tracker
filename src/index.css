@@ -1,5 +1,6 @@
 body {
-background-color: rgb(250, 250, 250);
+
+background-image: repeating-radial-gradient(white, lightgray);
 }
 
 .container {

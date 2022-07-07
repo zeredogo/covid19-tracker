@@ -12,9 +12,10 @@ const Chart = () => {
     }
    
     fetchAPI();
-  });
+  }, []);
+
   const lineChart = (
-    dailyData.length !== 0
+    dailyData.length 
     ? (
       <Line
        data={{
