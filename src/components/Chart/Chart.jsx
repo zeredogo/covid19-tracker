@@ -1,6 +1,6 @@
 import React, { useState , useEffect } from 'react'
 import { fetchDailyData } from '../../api';
-import { Line , Bar } from 'react-chartjs-2';
+import { Line, Bar } from 'react-chartjs-2';
 import styles from './chart.module.css';
 
 const Chart = () => {
@@ -13,7 +13,6 @@ const Chart = () => {
    
     fetchAPI();
   });
- 
   const lineChart = (
     dailyData.length !== 0
     ? (
@@ -34,18 +33,13 @@ const Chart = () => {
         }],
        }}
       />) :  null
+    
   );
 
   return (
     <div className={styles.container}>
     lineChart
-    <Bar
-    data={{
-      labels: ['red', 'blue'],
-    }} 
-    height={400}
-    width={600}
-    />
+   
     </div>
   )
 }
