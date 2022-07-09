@@ -25,12 +25,13 @@ class App extends React.Component {
   render() {
     const {data} = this.state;
   return (
-    <div className="container">
-        <div className='Header'>
+    <div className="">
+        <div className='header'>
         <Header/>
+        <img className='image' src='https://i.ibb.co/7QpKsCX/image.png' alt='COVID-19'/>
       </div>
-      <div className='main-body'>
-      <img className='image' src='https://i.ibb.co/7QpKsCX/image.png' alt='COVID-19'/>
+      <div className='container'>
+      
       <Cards data={data}/>
       <Chart />
       <CountryPicker handleCountryChange={this.handleCountryChange}/>

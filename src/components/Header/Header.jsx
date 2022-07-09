@@ -1,13 +1,12 @@
 import React from 'react';
-import styles from './header.madule.css';
+import styles from './header.module.css';
 
 const Header = () => {
   return (
-    <div className='header-container'>
-      <h1 className='logo'>DogoEmpire</h1>
-      <h3 className='covid19'>Covid-19 Tracker</h3>
+    <div className={styles.header.container}>
+      <h1 className={styles.logo}>DogoEmpire</h1>
     </div>
   )
 }
 
-export default Table
+export default Header;

@@ -1,0 +1,11 @@
+.header.container {
+    display: flex;
+  
+
+}
+.logo {
+    font-size: 50px;
+    font-weight: 500;
+    color: aquamarine;
+}
+
