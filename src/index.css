@@ -1,6 +1,5 @@
 body {
-
-background-image: repeating-radial-gradient(white, lightgray);
+background-color: #f5f6f5;
 }
 
 .container {
@@ -14,4 +13,14 @@ background-image: repeating-radial-gradient(white, lightgray);
   width: 370px;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 770px) {
+  .container {
+    margin: 0 10%;
+  }
+
+  .image {
+    width: 100%;
+  }
 }
