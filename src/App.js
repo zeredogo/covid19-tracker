@@ -1,5 +1,5 @@
 import React from 'react';
-import {Cards, Chart, CountryPicker, Map, Table} from './components';
+import { Header, Cards, Chart, CountryPicker, Map, Footer } from './components';
 import {fetchData} from './api';
 
 
@@ -26,15 +26,18 @@ class App extends React.Component {
     const {data} = this.state;
   return (
     <div className="container">
-      <div className='app-left'>
+        <div className='Header'>
+        <Header/>
+      </div>
+      <div className='main-body'>
       <img className='image' src='https://i.ibb.co/7QpKsCX/image.png' alt='COVID-19'/>
       <Cards data={data}/>
       <Chart />
       <CountryPicker handleCountryChange={this.handleCountryChange}/>
       <Map />
       </div>
-      <div className='app-right'>
-        <Table/>
+      <div className='footer'>
+        <Footer />
       </div>
     </div>
   );
