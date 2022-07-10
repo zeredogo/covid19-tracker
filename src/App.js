@@ -28,7 +28,9 @@ class App extends React.Component {
     <div className="">
         <div className='header'>
         <Header/>
-        <img className='image' src='https://i.ibb.co/7QpKsCX/image.png' alt='COVID-19'/>
+      </div>
+      <div className='image-container'>
+      <img className='image' src='https://i.ibb.co/7QpKsCX/image.png' alt='COVID-19'/>
       </div>
       <div className='container'>
       

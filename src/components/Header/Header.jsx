@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './header.module.css';
-
+import zone from './image/kryptozone.jpeg';
 const Header = () => {
   return (
     <div className={styles.header.container}>
-      <h1 className={styles.logo}>DogoEmpire</h1>
+      <img src={zone} className={styles.zone} alt='KryptoZone'/>
     </div>
   )
 }
