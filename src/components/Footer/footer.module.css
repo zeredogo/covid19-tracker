@@ -1,8 +1,7 @@
 .footer{
-    text-align: left;
-    border: none;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-  
+  display: flex;
+  }
+
+  .network {
+    flex-direction: column;
   }
