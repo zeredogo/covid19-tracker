@@ -1,5 +1,4 @@
 import React from 'react';
-import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './footer.module.css';
 
@@ -11,7 +10,7 @@ const Footer = () => {
         <h5><FontAwesomeIcon icon="fa-brands fa-twitter" /></h5>
         <h5><FontAwesomeIcon icon="fa-brands fa-linkedin" /></h5>
       </div>
-      <p className="footer"><small>Dogo Empire &copy; 2022</small></p>
+      <p className="footer"><small>Krypto Zone &copy; 2022</small></p>
     </div>
   )
 }
