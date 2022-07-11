@@ -1,16 +1,16 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {FaGithub, FaTwitter, FaLinkedin} from  'react-icons/fa';
 import styles from './footer.module.css';
 
 const Footer = () => {
   return (
     <div>
-         <div className={styles.network}>
-        <h5><FontAwesomeIcon icon="fa-brands fa-github" /></h5>
-        <h5><FontAwesomeIcon icon="fa-brands fa-twitter" /></h5>
-        <h5><FontAwesomeIcon icon="fa-brands fa-linkedin" /></h5>
+      <div className={styles.network}>
+        <button><a href='https://github.com/zeredogo'><FaGithub/></a></button>
+        <a href='https://twitter.com/dogoempire1'><FaTwitter/></a>
+        <a href='https://www.linkedin.com/in/paul-dogo-b70910211/'><FaLinkedin/></a>
       </div>
-      <p className="footer"><small>Krypto Zone &copy; 2022</small></p>
+      <p className={styles.footer}><small>Krypto Zone &copy; 2022</small></p>
     </div>
   )
 }
