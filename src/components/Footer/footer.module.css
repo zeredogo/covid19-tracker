@@ -1,7 +1,15 @@
 .footer{
   align-items: center;
+  justify-content: center;
   }
 
   .network {
-    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    padding: 0 20px ;
+  }
+
+  .container {
+    align-items: center;
+    justify-content: center;
   }

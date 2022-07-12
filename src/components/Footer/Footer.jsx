@@ -4,9 +4,10 @@ import styles from './footer.module.css';
 
 const Footer = () => {
   return (
-    <div>
+    <div className={styles.container}>
+      <h5>CONNECT WITH US:</h5>
       <div className={styles.network}>
-        <button><a href='https://github.com/zeredogo'><FaGithub/></a></button>
+        <a href='https://github.com/zeredogo'><FaGithub/></a>
         <a href='https://twitter.com/dogoempire1'><FaTwitter/></a>
         <a href='https://www.linkedin.com/in/paul-dogo-b70910211/'><FaLinkedin/></a>
       </div>

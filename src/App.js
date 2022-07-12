@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Cards, Chart, CountryPicker, Map, Footer } from './components';
+import { Header, Cards, Chart, CountryPicker, News, Footer } from './components';
 import {fetchData} from './api';
 
 
@@ -37,7 +37,7 @@ class App extends React.Component {
       <Cards data={data}/>
       <Chart />
       <CountryPicker handleCountryChange={this.handleCountryChange}/>
-      <Map />
+      <News />
       </div>
       <div className='footer'>
         <Footer />
