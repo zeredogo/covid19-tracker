@@ -1,11 +1,19 @@
 import React, { useState ,useEffect} from 'react';
+import axios from 'axios';
 import { Card, CardContent, Typography, Button, CardMedia, CardActionArea, CardActions } from '@material-ui/core';
 import cx from 'classnames';
 import styles from './news.module.css';
 import photo from './image/kryptozonee.jpeg'
 
 const News = () => {
-  const [value, setValue] = useState('paul');
+  const [value, setValue] = useState([]);
+
+  const getNews = () => {
+     axios.get("https://newsapi.org/v2/everything?q=tesla&apiKey=1ea292b985c5499aac80f70e120f4476")
+     .then((response) => {
+      console.log(response);
+     })
+  }
 
 
   return (
