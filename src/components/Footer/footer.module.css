@@ -6,10 +6,14 @@
   .network {
     margin-top: 20px;
     justify-content: center;
-    padding: 0 20px ;
+    padding: 0 10px ;
   }
 
   .container {
     align-items: center;
     justify-content: center;
+  }
+
+  .link {
+    padding: 0 10px;
   }

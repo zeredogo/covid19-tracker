@@ -1,0 +1,10 @@
+.root {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 345 !important;
+}
+.media {
+    max-width: 250px;
+    height: 140;
+}

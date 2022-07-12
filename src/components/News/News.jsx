@@ -1,29 +1,30 @@
 import React, { useState ,useEffect} from 'react';
-import { Card, CardContent, Typography, Grid } from '@material-ui/core';
+import { Card, CardContent, Typography, Button, CardMedia, CardActionArea, CardActions } from '@material-ui/core';
+import cx from 'classnames';
+import styles from './news.module.css';
+import photo from './image/kryptozonee.jpeg'
 
 const News = () => {
   const [value, setValue] = useState('paul');
 
 
   return (
-    <div>
-      <div class="max-w-sm rounded overflow-hidden shadow-lg">
-      <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/>
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-        <p class="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-        </p>
-      </div>
-      <div class="px-6 pt-4 pb-2">
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-      </div>
-    </div>
-        Hello from News still working on developing a perfect
-        News for the project. {value}
-    </div>
+         <Card className={cx(styles.card, styles.root)}>
+           <CardActionArea>
+             <CardContent>
+              <img src={photo} className={styles.media} alt='coronavirus' />
+                <Typography color='textSecondary' gutterBottom>Infected</Typography>
+                <Typography varaint='h5'></Typography>
+                <Typography color='textSecondary' >{value}</Typography>
+                <Typography variant='body2' color='textSecondary' >Number of active cases of COVID-19</Typography>
+             </CardContent>
+           </CardActionArea>
+           <CardActions>
+            <Button size='small' color='primary'>
+              Read More
+            </Button>
+           </CardActions>
+         </Card>
   )
 }
 
