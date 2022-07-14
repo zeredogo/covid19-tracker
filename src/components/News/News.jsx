@@ -10,10 +10,8 @@ const News = () => {
   async function ak() {
     let response = await fetch("https://newsapi.org/v2/everything?q=coronavirus&apiKey=1ea292b985c5499aac80f70e120f4476");
     let result = await response.json();
-    console.log(result);
-    console.log(result.articles);
 
-    setValue(result.articles)
+    setValue(result.articles);
   }
 
   ak ();
@@ -48,4 +46,4 @@ const News = () => {
          )
 }
 
-export default News
+export default News;
