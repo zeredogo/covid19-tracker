@@ -9,6 +9,10 @@ background-color: rgba(250, 250, 250);
   flex-direction: column;
 }
 
+.space {
+  margin: 20px 0 0 0;
+}
+
 .image-container {
   display: flex;
   align-items: center;
