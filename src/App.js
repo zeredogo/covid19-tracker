@@ -37,7 +37,7 @@ class App extends React.Component {
       <Cards data={data}/>
       <Chart />
       <CountryPicker handleCountryChange={this.handleCountryChange}/>
-      <News />
+      
       </div>
       <div className='footer'>
         <Footer />
